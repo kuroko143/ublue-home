@@ -1,0 +1,15 @@
+type: default-flatpaks
+system:
+    remove:
+        - io.github.input_leap.input-leap
+        - io.github.pwr_solaar.solaar
+        - io.missioncenter.MissionCenter
+        - org.fkoehler.KTailctl
+        - org.gnome.DejaDup
+        - org.gnome.World.PikaBackup
+        - org.kde.gwenview
+        - org.kde.haruna
+        - org.kde.kontact
+        - org.kde.kweather
+        - org.kde.okular
+        - org.mozilla.Thunderbird
