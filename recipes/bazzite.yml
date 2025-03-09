@@ -1,4 +1,4 @@
 type: rpm-ostree
-    remove:
-      - waydroid
-      - waydroid-selinux
+remove:
+  - waydroid
+  - waydroid-selinux
