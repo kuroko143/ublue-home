@@ -1,8 +1,8 @@
 modules:
   - type: signing
   - type: rpm-ostree
-      install:
-        - corectrl
-        - liquidctl
-        - printer-driver-brlaser
-        - qimgv
+    install:
+      - corectrl
+      - liquidctl
+      - printer-driver-brlaser
+      - qimgv
