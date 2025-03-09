@@ -17,6 +17,13 @@ modules:
       - corectrl
       - liquidctl
       - printer-driver-brlaser
+    replace:
+      - from-repo: https://copr.fedorainfracloud.org/coprs/danayer/linux-firmware-git/repo/fedora-41/danayer-linux-firmware-git-fedora-41.repo
+        packages:
+          - linux-firmware
+      - from-repo: https://copr.fedorainfracloud.org/coprs/xxmitsu/mesa-git/repo/fedora-41/xxmitsu-mesa-git-fedora-41.repo
+        packages:
+          - mesa
       
   - from-file: flatpaks.yml
   - type: signing
