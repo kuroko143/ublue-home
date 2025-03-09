@@ -1,0 +1,13 @@
+type: rpm-ostree
+replace:
+  - from-repo: https://copr.fedorainfracloud.org/coprs/xxmitsu/mesa-git/repo/fedora-41/xxmitsu-mesa-git-fedora-41.repo
+    packages:
+      - mesa-dri-drivers
+      - mesa-filesystem
+      - mesa-libEGL
+      - mesa-libgbm
+      - mesa-libGL
+      - mesa-libglapi
+      - mesa-libxatracker
+      - mesa-va-drivers
+      - mesa-vulkan-drivers
