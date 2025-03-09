@@ -12,15 +12,12 @@ image-version: testing
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
+  - type: signing
+  - from-file: flatpaks.yml
   - type: rpm-ostree
     install:
       - corectrl
       - liquidctl
       - printer-driver-brlaser
       - qimgv
-    remove:
-      - waydroid
-      - waydroid-selinux
-      
-  - from-file: flatpaks.yml
-  - type: signing
+  - from-file: bazzite.yml
