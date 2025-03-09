@@ -17,6 +17,7 @@ modules:
       - corectrl
       - liquidctl
       - printer-driver-brlaser
+      - qimgv
     remove:
       - waydroid
       - waydroid-selinux
