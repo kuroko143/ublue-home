@@ -6,8 +6,8 @@ name: ublue-home
 description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/aurora
-image-version: latest
+base-image: ghcr.io/ublue-os/bazzite
+image-version: testing
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -17,6 +17,10 @@ modules:
       - corectrl
       - liquidctl
       - printer-driver-brlaser
+    replace:
+      - from-repo: https://copr.fedorainfracloud.org/coprs/danayer/linux-firmware-git/repo/fedora-41/danayer-linux-firmware-git-fedora-41.repo
+        packages:
+          - linux-firmware
       
   - from-file: flatpaks.yml
   - type: signing
