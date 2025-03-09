@@ -1,0 +1,23 @@
+type: rpm-ostree
+replace:
+  - from-repo: https://copr.fedorainfracloud.org/coprs/danayer/linux-firmware-git/repo/fedora-41/danayer-linux-firmware-git-fedora-41.repo
+    packages:
+      - amd-gpu-firmware
+      - amd-ucode-firmware
+      - atheros-firmware
+      - brcmfmac-firmware
+      - cirrus-audio-firmware
+      - intel-audio-firmware
+      - intel-gpu-firmware
+      - intel-vsc-firmware
+      - iwlegacy-firmware
+      - iwlwifi-dvm-firmware
+      - iwlwifi-mvm-firmware
+      - libertas-firmware
+      - linux-firmware
+      - linux-firmware-whence
+      - mt7xxx-firmware
+      - nvidia-gpu-firmware
+      - nxpwireless-firmware
+      - realtek-firmware
+      - tiwilink-firmware
