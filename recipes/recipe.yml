@@ -6,8 +6,8 @@ name: ublue-home
 description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/bazzite
-image-version: testing
+base-image: ghcr.io/ublue-os/aurora
+image-version: latest
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -21,6 +21,9 @@ modules:
       - from-repo: https://copr.fedorainfracloud.org/coprs/danayer/linux-firmware-git/repo/fedora-41/danayer-linux-firmware-git-fedora-41.repo
         packages:
           - linux-firmware
+      - from-repo: https://copr.fedorainfracloud.org/coprs/g/kernel-vanilla/next/repo/fedora-41/group_kernel-vanilla-next-fedora-41.repo
+        packages:
+          - kernel
       - from-repo: https://copr.fedorainfracloud.org/coprs/xxmitsu/mesa-git/repo/fedora-41/xxmitsu-mesa-git-fedora-41.repo
         packages:
           - mesa
