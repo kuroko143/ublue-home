@@ -7,7 +7,6 @@ replace:
       - mesa-libEGL
       - mesa-libgbm
       - mesa-libGL
-      - mesa-libglapi
       - mesa-libxatracker
       - mesa-va-drivers
       - mesa-vulkan-drivers
