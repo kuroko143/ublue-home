@@ -18,9 +18,6 @@ modules:
       - liquidctl
       - printer-driver-brlaser
       - qimgv
-    remove:
-      - waydroid
-      - waydroid-selinux
     replace:
       - from-repo: https://copr.fedorainfracloud.org/coprs/danayer/linux-firmware-git/repo/fedora-41/danayer-linux-firmware-git-fedora-41.repo
         packages:
