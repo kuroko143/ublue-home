@@ -6,8 +6,8 @@ name: ublue-home
 description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/bazzite
-image-version: testing
+base-image: ghcr.io/ublue-os/aurora
+image-version: latest
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -21,6 +21,32 @@ modules:
     remove:
       - waydroid
       - waydroid-selinux
+      
+    replace:
+      - from-repo: https://copr.fedorainfracloud.org/coprs/danayer/linux-firmware-git/repo/fedora-41/danayer-linux-firmware-git-fedora-41.repo
+         packages:
+          - linux-firmware-whence
+          - linux-firmware
+          - amd-gpu-firmware
+          - amd-ucode-firmware
+          - atheros-firmware
+          - brcmfmac-firmware
+          - cirrus-audio-firmware
+          - intel-audio-firmware
+          - intel-gpu-firmware
+          - intel-vsc-firmware
+          - iwlegacy-firmware
+          - iwlwifi-dvm-firmware
+          - iwlwifi-mvm-firmware
+          - libertas-firmware
+          - mt7xxx-firmware
+          - nvidia-gpu-firmware
+          - nxpwireless-firmware
+          - realtek-firmware
+          - tiwilink-firmware
+          - alsa-sof-firmware
+          - alsa-tools-firmware
+          - alsa-firmware
       
   - from-file: flatpaks.yml
   - type: signing
