@@ -1,4 +1,6 @@
 type: rpm-ostree
+remove:
+  - mesa-libglapi
 replace:
   - from-repo: https://copr.fedorainfracloud.org/coprs/xxmitsu/mesa-git/repo/fedora-41/xxmitsu-mesa-git-fedora-41.repo
     packages:
