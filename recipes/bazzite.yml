@@ -2,3 +2,4 @@ type: rpm-ostree
 remove:
   - waydroid
   - waydroid-selinux
+  - mesa-libglapi
